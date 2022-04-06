@@ -3,7 +3,7 @@ const path = require("path");
 const app = express(); // express is egy függvény és ez lefut, és objektum jön vissza
 
 function getFunction(request, response){
-    response.sendFile(path.join(`${__dirname}/../frontend/index.html`));
+    response.sendFile(path.join(`${__dirname}/../index.html`));
 }
 
 app.get("/", getFunction);
