@@ -10,7 +10,7 @@ function Beer(title, sub, text, img){
 const beerHtml = (beer) => {
     return `
         <div class="beer">
-            <img src="/pub/image/${beer.img}">
+            <img src="/public/image/${beer.img}">
             <h2>${beer.title}</h2>
             <p class="sub">${beer.sub}</p>
             <p class="text">${beer.text}</p>
@@ -67,7 +67,7 @@ let stripes = function () {
 window.addEventListener(`load`, async (event) =>{
     console.log("Page is loaded.");
 
-    const fetchedBeers = await fetch(`pub/data.json`);
+    const fetchedBeers = await fetch(`public/data.json`);
     const beersJson = await fetchedBeers.json();
 
     renderBeers(processBeers(beersJson.cards));
