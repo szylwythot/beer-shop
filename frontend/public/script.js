@@ -34,13 +34,34 @@ function renderBeers(beers){
 
     const rootElement = document.getElementById("root");
     rootElement.insertAdjacentHTML(`beforeend`, `
-    <h1>Szilvi's Brewery</h1>
-    <h3>Dive in our beer specialities!</h3>
+    <div class="ball">
+        <h1>Szilvi's Brewery</h1>
+        <h3>Dive in our beer specialities!</h3>
+        ${stripes()}
+    </div>
     <div class="beers">
         ${beersHtml}
     </div>
     `);
 }
+
+let stripes = function () {
+    let stripesHtml ="";
+    // for (let i = 0; i < 7; i++) {
+    //    stripesHtml += `
+    //    <div class="stripe nth${i+1}"></div>
+    //    `;
+    // }
+    for (let i = 0; i < 10; i++) {
+        stripesHtml += `
+        <div class="wideStripe nth${i}"></div>
+        `;
+     }
+    stripesHtml += `
+    <div class="hiddenStripe"></div>
+    `;
+    return stripesHtml;
+};
 
 window.addEventListener(`load`, async (event) =>{
     console.log("Page is loaded.");
