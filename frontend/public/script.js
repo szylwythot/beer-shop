@@ -8,7 +8,7 @@ function Beer(title, sub, text){
 
 const beerHtml = (beer) => {
     return `
-        <div>
+        <div class="beer">
             <h2>${beer.title}</h2>
             <p class="sub">${beer.sub}</p>
             <p class="text">${beer.text}</p>
@@ -23,7 +23,7 @@ function processBeers(beersArray){
     return beers;
 };
 
-function rederBeers(beers){
+function renderBeers(beers){
     let beersHtml = "";
     for (const beer of beers) {
         beersHtml += beerHtml(beer);
@@ -31,6 +31,8 @@ function rederBeers(beers){
 
     const rootElement = document.getElementById("root");
     rootElement.insertAdjacentHTML(`beforeend`, `
+    <h1>Szilvi's Brewery</h1>
+    <h3>Dive in our beer specialities!</h3>
     <div class="beers">
         ${beersHtml}
     </div>
@@ -43,5 +45,5 @@ window.addEventListener(`load`, async (event) =>{
     const fetchedBeers = await fetch(`pub/data.json`);
     const beersJson = await fetchedBeers.json();
 
-    rederBeers(processBeers(beersJson.cards));
+    renderBeers(processBeers(beersJson.cards));
 });
