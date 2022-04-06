@@ -6,52 +6,62 @@
         {
             "title": "Mango Bay",
             "sub": "Mad Scientist Beer",
-            "text": "Pale Ale - American"
+            "text": "Pale Ale - American",
+            "img" : "blackNwhite.jpg"
         },
         {
             "title": "Távoli Galaxis",
             "sub": "Rothbeer Brewery",
-            "text": "IPA - American"
+            "text": "IPA - American",
+            "img" : "bokor.jpg"
         },
         {
             "title": "Flying Rabbit AIPA",
             "sub": "MONYO Brewing Co.",
-            "text": "IPA - American"
+            "text": "IPA - American",
+            "img" : "child.jpg"
         },
         {
             "title": "Liquid Cocaine",
             "sub": "Mad Scientist Beer",
-            "text": "IPA - Imperial"
+            "text": "IPA - Imperial",
+            "img" : "connection.jpg"
         },
         {
             "title": "Organic Chocolate Stout",
             "sub": "Samuel Smith Old Brewery",
-            "text": "Stout - English"
+            "text": "Stout - English",
+            "img" : "tag.jpg"
         },
         {
             "title": "Bracia",
             "sub": "Thornbridge Brewery",
-            "text": "Strong Ale - English"
+            "text": "Strong Ale - English",
+            "img" : "grapes.jpg"
         },
         {
             "title": "Oatmeal Stout",
             "sub": "Samuel Smith Old Brewery",
-            "text": "Stout - Oatmeal"
+            "text": "Stout - Oatmeal",
+            "img" : "kissing.jpg"
         },
         {
             "title": "Black Tokyo Horizon",
             "sub": "BrewDog",
-            "text": "Stout - American Imperial"
+            "text": "Stout - American Imperial",
+            "img" : "kovek.jpg"
         },
         {
             "title": "Vintage Ale",
             "sub": "Fuller's",
-            "text": "Old Ale"
+            "text": "Old Ale",
+            "img" : "leaves.jpg"
         },
         {
             "title": "All the Leaves are Brown",
             "sub": "Tempest Brewing Company",
-            "text": "Brown Ale - American"
+            "text": "Brown Ale - American",
+            "img" : "ozike.jpg"
         }
     ]
 }

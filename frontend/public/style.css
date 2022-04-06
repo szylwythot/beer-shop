@@ -4,6 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #f7f3ec;
     text-align: center;
+    font-size: 14px;
 }
 
 #root h1, 
@@ -11,6 +12,12 @@ body{
     padding: 20px;
     
     font-family: 'Rum Raisin', sans-serif;
+    font-size: 26px;
+}
+
+
+#root h3{
+    font-size: 20px;
 }
 
 #root{
@@ -43,4 +50,32 @@ body{
     /* width: 150px;
     height: 280px; */
     background-color: #f7f3ec;
+
+    padding: 8px;
+
+    /* text-align: left; */
+}
+
+#root .beers .beer img{
+    /* position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%); */
+
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    align-content: center;
+}
+
+#root .beers .beer h2{
+    font-size: 22px;
+}
+
+#root .beers .beer .sub{
+    font-size: 14px;
+}
+
+#root .beers .beer .text{
+
 }

@@ -1,14 +1,16 @@
 let beers = [];
 
-function Beer(title, sub, text){
+function Beer(title, sub, text, img){
     this.title = title;
     this.sub = sub;
     this.text = text;
+    this.img = img;
 }
 
 const beerHtml = (beer) => {
     return `
         <div class="beer">
+            <img src="/pub/image/${beer.img}">
             <h2>${beer.title}</h2>
             <p class="sub">${beer.sub}</p>
             <p class="text">${beer.text}</p>
@@ -17,8 +19,9 @@ const beerHtml = (beer) => {
 };
 
 function processBeers(beersArray){
+    let i = 0;
     for (const beer of beersArray) {
-        beers.push(new Beer(beer.title, beer.sub, beer.text));
+        beers.push(new Beer(beer.title, beer.sub, beer.text, beer.img));
     }
     return beers;
 };
