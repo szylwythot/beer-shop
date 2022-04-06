@@ -37,6 +37,7 @@ function renderBeers(beers){
     <div class="ball">
         <h1>Szilvi's Brewery</h1>
         <h3>Dive in our beer specialities!</h3>
+        <h4>Anno 1988</h4>
         ${stripes()}
     </div>
     <div class="beers">
@@ -47,11 +48,11 @@ function renderBeers(beers){
 
 let stripes = function () {
     let stripesHtml ="";
-    // for (let i = 0; i < 7; i++) {
-    //    stripesHtml += `
-    //    <div class="stripe nth${i+1}"></div>
-    //    `;
-    // }
+    for (let i = 0; i < 7; i++) {
+       stripesHtml += `
+       <div class="stripe nth${i+1}"></div>
+       `;
+    }
     for (let i = 0; i < 10; i++) {
         stripesHtml += `
         <div class="wideStripe nth${i}"></div>
