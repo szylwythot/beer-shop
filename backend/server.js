@@ -7,7 +7,7 @@ function getFunction(request, response){
 }
 
 app.get("/", getFunction);
-app.use("/public", express.static(`${__dirname}/../frontend/public`));
+app.use("/frontend/public", express.static(`${__dirname}/../frontend/public`));
 
 const port = 9000;
 const ipAddress = `http://127.0.0.1:${port}`
