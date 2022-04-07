@@ -62,6 +62,19 @@
             "sub": "Tempest Brewing Company",
             "text": "Brown Ale - American",
             "img" : "ozike.jpg"
+        },
+        {
+            "title": "Soproni IPA",
+            "sub": "Soproni",
+            "text": "Indian Pale Ale",
+            "img" : "kovek.jpg"
+        },
+        {
+            "title": "Bambi",
+            "sub": "Communism",
+            "text": "Bubbli red soft drink",
+            "img" : "kissing.jpg"
         }
+
     ]
 }
