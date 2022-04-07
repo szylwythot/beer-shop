@@ -67,7 +67,7 @@ let stripes = function () {
 window.addEventListener(`load`, async (event) =>{
     console.log("Page is loaded.");
 
-    const fetchedBeers = await fetch(`frontend/public/data.json`);
+    const fetchedBeers = await fetch(`frontend/public/data.json`, { "mode": "cors"});
     const beersJson = await fetchedBeers.json();
 
     renderBeers(processBeers(beersJson.cards));
